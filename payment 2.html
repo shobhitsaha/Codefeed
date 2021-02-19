@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IOSD | Join IOSD</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+    <header >        
+        <h4>IOSD</h4>
+    </header>
+    
+    
+    <nav class="head">
+        <a href="Pro.html">HOME</a>
+        <a target="_blank" href="payment 2.html">JOIN IOSD</a>
+        <a href="#">LOGIN</a>
+    </nav>
+    
+    <br>
+
+
+
+    <div class="container">
+        <form><!-- use action attribute to embed the link of server where form has to be submitted--> 
+            <h1 class="main-heading">International Organisation of Software developers</h1>
+            <p>Required Fields *  </p>
+            
+            <fieldset><legend class="special"><b style="font-size: 150%;">Contact Information</b></legend>
+            <p>Name* : <input type="Text" name="name" required placeholder="Name"> </p>
+            
+                <p>Gender*</p>
+                    <p>
+                        Male<input type="radio" name="gender" id="male" required>
+                        Female<input type="radio" name="gender" id="female" required>
+                        Others<input type="radio" name="gender" id="others" required>
+                    </p>
+            
+            <label  for="address">Address : </label>
+            <text  id="address" name="addres" cols="100" rows="8"></textarea>
+            <p>Email :* <input type="email" name="mail" required placeholder="codefeed@iosd.org"></p>
+            <p>Pincode* : <input type="number" name="pincode" required placeholder="110000" ></p>
+        </fieldset>
+        <hr>
+
+            <ul>
+                <h3>Payment Options</h3>
+                <li>Debit Card</li>
+                <li class="special"> Credit Card</li>
+                <li>Internet Banking</li>
+                <li>Rupay Card</li>
+            </ul>
+
+            <h2><span class="special">Payment Information</span></h2>
+            <p>
+                Card Type* : 
+                <select name="card_type" id="card_type" required > 
+                    <option value="">--Select a Card Type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="master">Master Card</option>
+                    <option value="rupay">Rupay</option>
+
+                </select>
+            </p>
+            <p>
+                Card Number* :<input required type="number" name="cno." id="con.">
+            </p>
+            <p>
+                Expiry date*	:<input type="date" name="expiry_date" id="expiry_date" required>
+                CVV* : <input type="password" name="cvv" id="cvv" required>
+            </p>
+            <p>
+                <input type="submit" value="Pay Now">		
+            </p>
+        </form>
+    </div>
+</body>
+</html>
